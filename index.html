@@ -4,6 +4,30 @@
 </head>
 
 <body>
-    <h1>Hello!</h1>
-    <input>
+    <div id="colorr">
+        <h1 id="log"></h1>
+    </div>
+    <input id="entry" placeholder="enter the text">
+    <input id="inputColor" placeholder="input your color in hex">
+    <script>
+        const input = document.getElementById('entry');
+        const log = document.getElementById('log');
+        const colorrr = document.getElementById('colorr');
+        const inputColor = document.getElementById('inputColor');
+
+        input.addEventListener('change', updateValue);
+        inputColor.addEventListener('change', changeColor);
+
+        console.log("hello");
+
+        function updateValue(e) {
+            log.textContent = e.target.value;
+            console.log('#' + e.target.value);
+        }
+
+        function changeColor(e) {
+            console.log('#' + e.target.value);
+            colorrr.style.backgroundColor = '#' + e.target.value;
+        }
+    </script>
 </body>

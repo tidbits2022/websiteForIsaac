@@ -6,3 +6,15 @@
 html {
     font-family: RetroRescued;
 }
+
+div {
+    height: 300px;
+    width: 500px;
+    border: 2px black;
+    border-style: solid;
+}
+
+#log {
+    text-align: center;
+    line-height: 300px;
+}
