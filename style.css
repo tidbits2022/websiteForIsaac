@@ -7,7 +7,7 @@ html {
     font-family: RetroRescued;
 }
 
-div {
+#colorr {
     height: 300px;
     width: 500px;
     border: 2px black;
